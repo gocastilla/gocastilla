@@ -1,16 +1,23 @@
-### Hi there 👋
+[![Me](https://i.imgur.com/qIzgGrS.png)]()
 
-<!--
-**gocastilla/gocastilla** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[![Coderty](https://i.imgur.com/Fjb4KrB.png)]()
 
-Here are some ideas to get you started:
+[![Projects](https://i.imgur.com/H8Dz9j8.png)]()
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+(...)
+
+[![Blog](https://i.imgur.com/7mFqFEf.png)]()
+
+(...)
+
+[More in `dev.to/alberto`](https://dev.to/alberto)
+
+[![Talks](https://i.imgur.com/pNMAmIZ.png)]()
+
+- `JUN 2018` **AlmeríaJS**: [Giving styles with style — An introduction to SASS/SCSS](https://www.meetup.com/es-ES/almeriajs/events/251239618)
+- `SEP 2019` **AlmeríaJS**: [MaaS (MEMES AS A SERVICE) — An introduction to Puppeteer](https://www.meetup.com/es-ES/almeriajs/events/264731238)
+
+[![Contact](https://i.imgur.com/laV7jbN.png)]()
+
+- [Twitter → @gocastilla](https://twitter.com/gocastilla)
+- [Mailto → to@albertogomez.dev](mailto:to@albertogomez.dev)

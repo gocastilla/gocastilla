@@ -1,0 +1,364 @@
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(../assets/fonts/JetBrainsMono-Regular.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url(../assets/fonts/JetBrainsMono-Bold.woff2);
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: JetBrainsMono;
+  font-weight: normal;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+body.dark {
+  --light-color: #062130;
+  --light-color-rgb: 6, 33, 48;
+  --dark-color: #fff6ed;
+  --dark-color-rgb: 255, 246, 237;
+  --main-color: #4ff58a;
+  --main-color-contrast: #062130;
+}
+
+body.light {
+  --light-color: #fff6ed;
+  --light-color-rgb: 255, 246, 237;
+  --dark-color: #062130;
+  --dark-color-rgb: 6, 33, 48;
+  --main-color: #4ff58a;
+  --main-color-contrast: #062130;
+}
+
+*::selection {
+  color: var(--main-color-contrast) !important;
+  background: var(--main-color) !important;
+}
+
+/* ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ @ ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ */
+
+nav {
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  z-index: 5;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li::marker {
+  display: none;
+  content: '';
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  color: var(--color-light);
+}
+
+nav ul li a#set-dark,
+nav ul li a#set-light {
+  cursor: pointer;
+  display: none;
+}
+
+body.light #set-dark {
+  display: block;
+}
+
+body.dark #set-light {
+  display: block;
+}
+
+/* ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ @ ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ */
+
+header {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+header .avatar {
+  width: 100%;
+}
+
+header .avatar img {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  user-select: none;
+  position: relative;
+  z-index: 5;
+}
+
+/*
+  WAVES
+  source: https://codepen.io/goodkatz/details/LYPGxQz
+*/
+
+header .waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 50px;
+  z-index: 0;
+  background-color: var(--dark-color);
+}
+
+header .waves svg {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  margin-bottom: -7px;
+}
+
+header .waves .parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+header .waves .parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+  fill: rgba(var(--light-color-rgb), 0.7);
+}
+
+header .waves .parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+  fill: rgba(var(--light-color-rgb), 0.5);
+}
+
+header .waves .parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+  fill: rgba(var(--light-color-rgb), 0.3);
+}
+
+header .waves .parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+  fill: var(--light-color);
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+@media (max-width: 500px) {
+  header .waves {
+    padding-top: calc(100px - 10vw);
+  }
+
+  header .waves svg {
+    height: 20vw;
+  }
+}
+
+/* ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ @ ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ */
+
+main {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ @ ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ */
+
+main section {
+  margin-bottom: 60px;
+}
+
+main section h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+main section h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+main section h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 0;
+  margin-left: -20px;
+}
+
+main section p {
+  margin: 0;
+  font-size: 15px;
+  padding: 20px 0 0 0;
+}
+
+main section p a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+main section p a strong {
+  text-decoration: underline;
+}
+
+main section ul {
+  margin: 0;
+  padding: 0 0 0 20px;
+}
+
+main section ul li {
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+main section ul li a {
+  color: var(--dark-color);
+}
+
+main section ul li em {
+  font-style: normal;
+  padding: 0 4px;
+  border-radius: 4px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+main section ul li strong {
+  font-weight: bold;
+}
+
+main section.line-right {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  position: relative;
+}
+
+main section.line-right .container {
+  box-sizing: border-box;
+  width: calc(100% - 20px);
+  padding-right: 20px;
+}
+
+main section.line-right:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 20px;
+  height: 100%;
+  min-height: 40px;
+  background-color: var(--dark-color);
+  border-radius: 0 4px 4px 4px;
+}
+
+main section.line-right h3 {
+  margin-right: -20px;
+}
+
+main section.line-right h3:after {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0 20px;
+  background-color: var(--dark-color);
+  border-radius: 4px 0 0 4px;
+}
+
+main section.line-left {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  position: relative;
+}
+
+main section.line-left .container {
+  box-sizing: border-box;
+  padding-left: 40px;
+}
+
+main section.line-left:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 100%;
+  min-height: 40px;
+  background-color: var(--dark-color);
+  border-radius: 4px 0 4px 4px;
+}
+
+main section.line-left h3:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 20px 0 0;
+  background-color: var(--dark-color);
+  border-radius: 0 4px 4px 0;
+}
+
+/* ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ @ ~~~~~~~~~~ ~~~~~~~~~~ ~~~~~~~~~~ */
+
+footer {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+footer strong {
+  display: inline-block;
+  font-size: 15px;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  padding: 10px 20px;
+  border-radius: 4px;
+}

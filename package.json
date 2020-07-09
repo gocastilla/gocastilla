@@ -1,0 +1,23 @@
+{
+  "name": "gocastilla",
+  "version": "0.0.1",
+  "description": "My ✨special ✨ repository.",
+  "main": "app/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "servor": "^4.0.2"
+  },
+  "scripts": {
+    "start": "servor ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gocastilla/gocastilla.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gocastilla/gocastilla/issues"
+  },
+  "homepage": "https://github.com/gocastilla/gocastilla#readme"
+}

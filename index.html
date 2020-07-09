@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Alberto Gómez - UX/UI & Front-end Developer</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#35b362" />
+    <meta name="theme-color" content="#35b362" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://github.com/gocastilla" target="_blank">Github</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/gocastilla" target="_blank">Twitter</a>
+        </li>
+        <li>
+          <a id="set-dark">🌙</a>
+        </li>
+        <li>
+          <a id="set-light">☀️</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="avatar">
+        <img src="assets/images/me.png" alt="Me" />
+
+        <div class="waves">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Alberto Gómez</h1>
+        <h2>UX/UI and Front-end</h2>
+        <p>I am just another Javascript developer.</p>
+        <p>
+          This website is under construction, so of course: Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit. Proin arcu tellus, tempus vitae
+          nibh at, scelerisque vehicula dui.
+        </p>
+        <p>
+          Morbi blandit metus viverra purus porttitor accumsan. Nunc tincidunt
+          molestie sodales. Nam lacinia eros urna, vel blandit dolor placerat
+          id. Phasellus aliquet ultrices molestie. Proin eget ante ante.
+        </p>
+      </section>
+
+      <section id="blog" class="line-left">
+        <div class="container">
+          <h3>Blog 📚</h3>
+          <ul></ul>
+          <p>
+            <a href="https://dev.to/alberto" target="_blank">
+              More in <strong>dev.to/alberto</strong>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="line-right">
+        <div class="container">
+          <h3>📦 Projects</h3>
+          <p>¯\_(ツ)_/¯</p>
+        </div>
+      </section>
+
+      <section id="talks" class="line-left">
+        <div class="container">
+          <h3>Talks 💬</h3>
+          <ul>
+            <li>
+              <em>JUN 2018</em> <strong>AlmeríaJS</strong>: Giving styles with
+              style — An introduction to SASS/SCSS
+            </li>
+            <li>
+              <em>SEP 2019</em> <strong>AlmeríaJS</strong>: MaaS (MEMES AS A
+              SERVICE) — An introduction to Puppeteer
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="line-right">
+        <div class="container">
+          <h3>🛠️ Skills</h3>
+          <p>¯\_(ツ)_/¯</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <strong>Copyright © 2020 Alberto Gómez</strong>
+    </footer>
+
+    <script src="app/main.js"></script>
+  </body>
+</html>
