@@ -1,3 +1,3 @@
 [![Me](https://i.imgur.com/qIzgGrS.png)]()
 
-[![Coderty](https://i.imgur.com/Fjb4KrB.png)]()
+[![GPTadvisor](https://i.imgur.com/ErTankp.png)]()
